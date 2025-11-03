@@ -11,6 +11,11 @@ export default function Home() {
           A starter project for authentication in Next.js using TypeScript,
           Tailwind CSS, and a PostgreSQL database.
         </p>
+        <div className="mt-8">
+            <a href="/sign-up">Crear Cuenta</a>
+            <span className="mx-4">|</span>
+            <a href="/sign-in">Iniciar Sesión</a>
+        </div>
       </main>
     </div>
   );
