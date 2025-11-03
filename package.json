@@ -7,20 +7,33 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate:up": "drizzle-kit migrate up",
+    "db:migrate:down": "drizzle-kit migrate down",
+    "db:reset": "drizzle-kit reset",
+    "db:seed": "drizzle-kit seed"
   },
   "dependencies": {
+    "better-auth": "^1.3.34",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "next": "16.0.1",
+    "pg": "^8.16.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "next": "16.0.1"
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@biomejs/biome": "2.2.0",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pg": "^8.15.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
+    "drizzle-kit": "^0.31.6",
     "tailwindcss": "^4",
-    "@biomejs/biome": "2.2.0"
+    "tsx": "^4.20.6",
+    "typescript": "^5"
   }
 }
